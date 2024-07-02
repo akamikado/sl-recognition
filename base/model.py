@@ -3,6 +3,7 @@ import numpy as np
 import math
 from pathlib import Path
 import matplotlig.pyplot as plt
+from utils.logging import LOGGER
 
 
 def feature_visualization(x, module_type, stage, n=32, save_dir=Path("runs/detect/exp")):
@@ -58,7 +59,7 @@ def unbind_concat_embeddings(embeddings):
 
 class BaseModel(tf.keras.layers.Layer):
     def call(self, x):
-        if isInstance(x, dict):
+        if isinstance(x, dict):
             return self.loss(x)
         return self.predict(x)
 
