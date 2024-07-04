@@ -1,1 +1,1 @@
-# YOLOv8 Implementation in Tensorflow
+# YOLOv8 for Sign Language Recognition
