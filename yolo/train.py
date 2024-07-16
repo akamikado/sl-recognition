@@ -4,7 +4,7 @@ from model import ModifiedYolo
 # split = float(input("Enter the split: "))
 # split_dataset(split)
 
-model = ModifiedYolo("yolov8n-cls.pt")
+model = ModifiedYolo("../weights/yolov8n-cls.pt")
 
 
 results = model.train(data="isl_dataset-12",
